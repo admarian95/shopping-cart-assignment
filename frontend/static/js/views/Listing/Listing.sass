@@ -1,0 +1,88 @@
+.container
+    display: flex
+    justify-content: space-between
+    padding-right: 20px
+    flex-wrap: wrap
+    width: 80%
+
+    @media  (max-width: 767px)
+        display: none
+        flex-direction: column
+
+        &.is-visible
+            display: flex
+            width: auto
+            background-color: whitesmoke
+
+
+    .product-image
+        width: 100%
+
+    .product-description
+        background-color: rgb(207, 231, 168)
+        padding: 8px 0
+        text-align: center
+        font-size: 13px
+        @media  (max-width: 767px)
+            font-size: 11px
+            padding: 10px
+
+.product-container
+    width: 20%
+    padding: 16px
+    margin-bottom: 16px
+    box-shadow: 4px 23px 45px -22px rgba(125,121,121,0.75)
+    -webkit-box-shadow: 4px 23px 45px -22px rgba(125,121,121,0.75)
+    -moz-box-shadow: 4px 23px 45px -22px rgba(125,121,121,0.75)
+
+    @media  (max-width: 767px)
+        width: auto
+
+    &:last-child
+        margin-bottom: 0
+
+    .product-container-heading
+        max-height: 50px
+    .price-group
+        display: flex
+        justify-content: space-around
+        @media  (max-width: 767px)
+            display: grid
+            place-content: flex-end
+
+    .img-container img
+        @media (min-width: 767px)
+            max-height: 170px
+
+    .buy-now-btn
+        border: none
+        background-color: crimson
+        padding: 5px 10px
+        color: white
+
+        &:hover
+            cursor: pointer
+
+        &:disabled
+            background-color: darkgrey
+            cursor: not-allowed
+
+.main-container
+    display: inline-flex
+    margin-top: 0
+    width: 100%
+    margin-bottom: 50px
+
+.listing-product-wrapper
+    @media  (max-width: 767px)
+        display: flex
+        align-items: center
+
+.img-container
+    @media  (max-width: 767px)
+        padding: 10px
+        min-width: 80px
+
+#price
+    @media  (max-width: 767px)
+        display: none

@@ -1,0 +1,94 @@
+$font-stack: 'Roboto', sans-serif
+$primary-color: rgb(36, 38, 41)
+
+*
+  text-decoration: none
+body
+  font: 100% $font-stack
+  color: $primary-color
+
+  nav a
+    text-decoration: none
+    color: maroon
+
+.nav-cart
+  display: inline-flex
+  width: 80px
+  align-items: center
+  background-color: lightpink
+  padding: 10px
+  a
+    color: black
+
+.nav-links
+  display: inline-block
+  margin-left: 100px
+  bottom: 14px
+
+  & a:first-child
+    margin-right: 30px
+
+.link-wrapper
+  display: inline-flex
+  justify-content: space-between
+  width: calc(100% - 336px)
+
+  @media (min-width: 768px) and (max-width: 1024px)
+    width: calc(100% - 120px)
+
+  @media (max-width: 767px)
+    width: auto
+    position: absolute
+    right: 0
+
+.signup
+  position: absolute
+  right: 136px
+  top: 0
+
+  @media (min-width: 768px) and (max-width: 1024px)
+    right: 0
+
+  @media (max-width: 767px)
+    display: none
+
+  & a:first-child
+    margin-right: 30px
+
+.nav
+  position: relative
+  border-bottom: 10px solid #ffb6c1
+
+.nav-logo
+  position: relative
+  top: 15px
+  width: 200px
+  @media (min-width: 768px) and (max-width: 1024px)
+    width: 120px
+  @media (max-width: 767px)
+    width: 90px
+    top: 0
+
+.signInContainer
+  display: flex
+  align-items: center
+  margin: 100px auto
+
+  @media (max-width: 767px)
+    flex-direction: column
+
+.signInBtn
+  text-align: center
+  padding: 5px 0
+  margin-top: 12px
+  background-color: green
+  color: white
+  width: 100%
+  border: none
+  cursor: pointer
+
+footer
+  position: fixed
+  width: 100%
+  bottom: 0
+  background-color: lightgray

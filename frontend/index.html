@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <base href="/" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Cart</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <img class="nav-logo" src="./static/images/logo_2x.png"
+                alt="logo" />
+            <div class='link-wrapper'>
+                <div class='nav-links'>
+                    <!-- <a href="/" data-link>Home </a> -->
+                    <a href="/listing" data-link>Products </a>
+                </div>
+                <div class="nav-cart">
+                    <?xml version="1.0" encoding="utf-8" ?>
+                        <svg version="1.1" id="Layer_1" focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" viewBox="0 0 24 24"
+                            style="enable-background:new 0 0 24 24;"
+                            xml:space="preserve">
+                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9
+                                2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35
+                                2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2
+                                2h12v-2H7.42c-.14
+                                0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0
+                                1.41-.41
+                                1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20
+                                4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89
+                                2
+                                1.99 2 2-.9 2-2-.9-2-2-2z" />
+                            </svg>
+                            <a href="/cart"><span id="nav-items-total"
+                                    data-link>0</span><span data-link>Items</span></a>
+                        </div>
+                    </div>
+                    <div class="signup">
+                        <a href="/signIn" data-link> SignIn</a>
+                        <a href="/register"> Register</a>
+                    </div>
+                </nav>
+                <div class="main-container">
+                    <aside id="menu-categories"></aside>
+
+                    <article class='container' id="container">
+
+                    </article>
+                </div>
+                <footer>
+                    <p>CopyRight @ 2011-2018 Sabka Bazaar Company Pvt. Ltd.</p>
+                </footer>
+                <template id="signIn">
+                    <section class="signInContainer">
+                        <div class="sign-in-info">
+                            <h3>Login</h3>
+                            <p>Get Access to your Orders,Wishlist and
+                                recommendations</p>
+                        </div>
+                        <form>
+                            <label for="username">Username</label><input
+                                type="text" class="signInFormInput"
+                                id="username">
+                            <label for="password">Password</label><input
+                                type="text" class="signInFormInput"
+                                id="password">
+                            <button type="submit" class="signInBtn">Login</button>
+                        </form>
+                    </section>
+                </template>
+                <template id="plp-product">
+                    <div class="product-container" id="product-container">
+                        <h3 class="product-description-heading"></h3>
+                        <div class="listing-product-wrapper">
+                            <div class="img-container">
+                                <img src="" alt="img placeholder"
+                                    class="product-image" />
+                            </div>
+                            <p class="product-description"></p>
+                        </div>
+                        <div class="price-group">
+                            <span id="price">MRP: Rs</span>
+                            <button class="buy-now-btn">Buy Now</button>
+                        </div>
+
+                    </div>
+                </template>
+                <template id="plp-categories">
+                    <p class='subcategory'><a href="#"></a></p>
+                </template>
+                <section class="cart-items"></section>
+                <template id="cart">
+                    <div class="cart-heading is-transparent"> My Cart <span
+                            id="cart-items"></span><span>Items</span></div>
+                    <article class="cart-item is-transparent">
+                        <div>
+                            <img class="cart-item-img" src=""
+                                alt="placeholder"
+                                /><div class="cart-item-desc-wrapper">
+                                <h4 class="cart-item-heading"></h4>
+                                <span class= 'decrease-item'> - </span> 1 <span
+                                    class='increase-item'> + </span><span> x
+                                </span><span id="cart-item-price"></span>
+                            </div>
+                        </div><span id='total-item-price'></span>
+                    </article>
+
+                </template>
+            </body>
+        </html>

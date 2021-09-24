@@ -1,0 +1,44 @@
+.cart-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 12px
+    border: 1px solid lightgray
+
+    &s
+        width: 100%
+        background-color: lightpink
+
+    &-img
+        width: 100px
+        @media (max-width: 767px)
+            width: 60px
+            margin-top: 10px
+
+    &-desc-wrapper
+        display: inline-block
+        margin-left: 50px
+        @media (max-width: 767px)
+            margin: 0 0 13px 13px
+            width: 200px
+
+
+.decrease-item , .increase-item
+    padding: 0 10px
+    margin: 0 5px
+    background-color: maroon
+    color: white
+    border-radius: 5px
+
+.cart-heading
+    height: 60px
+    display: flex
+    align-items: center
+    padding-left: 12px
+    margin: 10px 0
+    border: 1px solid black
+
+.is-transparent
+    background-color: whitesmoke
+#total-item-price
+    margin-right: 12px
